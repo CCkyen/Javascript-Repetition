@@ -1,7 +1,6 @@
 <!--https://www.teaching-materials.org/javascript/exercises/variables -->
 
 <!-- The Fortune Teller -->
-
 <script>
     var x = "Artist";
     var y = "Cuba";
@@ -14,7 +13,6 @@
 
 
 <!-- The Age Calculator -->
-
 <script>
     var birthYear = 2002;
     var futureYear = 2050;
@@ -26,3 +24,36 @@
 
 
 <!-- The Lifetime Supply Calculator -->
+<script>
+    var currentAge = 20;
+    var maxAge = 65;
+    var RC = 2;
+    var lifetimeSupply = ((maxAge - currentAge )* 365) * 2;
+
+    console.log("I would need " + lifetimeSupply + " of Reese's Cups to last me until i'm " + maxAge )
+
+</script>
+
+
+<!-- The Geometrizer -->
+<script>
+    var radius = 7.5;
+    var circumference = 2 * Math.PI * radius;
+    var area = Math.PI * Math.pow (radius,2) 
+
+    console.log("The Circumference is " + circumference)
+    console.log("The Area is " + area) 
+
+</script>
+
+
+<!-- The Temperature Converter -->
+<script>
+    var celsius = 27;
+    var fahrenheit = celsius * (9/5) + 32
+    var fahrenheit2 = 42;
+    var celsius2 = (fahrenheit2 - 32) * (5/9)
+
+    console.log (celsius + "C is "+ fahrenheit +"F")
+    console.log (fahrenheit2 + "F is " + celsius2 + "C")
+</script>
