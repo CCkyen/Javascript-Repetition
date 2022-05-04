@@ -1,0 +1,71 @@
+<!-- What number's bigger -->
+
+<script>
+    function greaterNum(number1, number2) {
+        if (number1 > number2) {
+            return number1;
+        } else {
+            return number2;
+        }
+    }
+    console.log(greaterNum(5, 10));
+    console.log(greaterNum(18, 5));
+    console.log(greaterNum(66, 66.5));
+</script>
+
+
+<!-- The World Translator -->
+
+<script>
+    function helloWorld(lang) {
+        if (lang == 'ph') {
+            return 'kumusta sa mundo';
+        } else if (lang == 'it') {
+            return 'Ciao mondo';
+        } else {
+            return 'Hello, World';
+        }
+    }
+    console.log(helloWorld('ph'));
+    console.log(helloWorld('it'));
+    console.log(helloWorld('en'));
+</script>
+
+
+<!-- The Grade Assigner -->
+<script>
+    function assignGrade(score){
+        if (score > 4){
+            return "A";
+        } else if (score == 4){
+            return "B"; 
+        } else if (score == 3){
+            return "C";
+        } else if (score == 2){
+            return "D";
+        } else {
+            return "F";
+        }
+    }
+    console.log(assignGrade(5));
+    console.log(assignGrade(4));
+    console.log(assignGrade(3));
+    console.log(assignGrade(2));
+    console.log(assignGrade(1));
+</script>
+
+
+<!-- The Pluralizer -->
+<script>
+    function pluralize(noun, number) {
+    if (number != 1 && noun != 'sheep' && noun != 'geese') {
+        return number + ' ' + noun + 's';
+    } else {
+        return number + ' ' + noun;
+    }
+}
+console.log('I have ' + pluralize('cat', 0));
+console.log('I have ' + pluralize('cat', 1));
+console.log('I have ' + pluralize('cat', 2));
+
+</script>

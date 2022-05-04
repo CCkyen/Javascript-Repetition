@@ -1,0 +1,135 @@
+<!-- The Fortune Teller -->
+<script>
+    function tellFortune(jobTitle, geoLocation, partner, numKids) {
+        var future = "You will be a " + jobTitle + "in " + geoLocation + "married to " +
+            partner + " with " + numKids + "kids";
+        console.log(future);
+    }
+
+    tellFortune("Singer ", "the USA ", "Vinnie ", "3 ");
+    tellFortune("Webdev ", "The Philippines ", "The Joker ", "2 ");
+    tellFortune("Sugarbaby ", "Hawaii ", "Bretman Rock ", "0 ");
+</script>
+
+
+<!-- The Puppy Age Calculator -->
+<script>
+    function calculateDogAge(keikoAge) {
+        var dogAge = "Keiko is " + keikoAge * 7 + " years old in dog years.";
+        console.log(dogAge);
+    }
+
+    calculateDogAge(1);
+    calculateDogAge(7);
+    calculateDogAge(12);
+</script>
+
+
+<!-- The Lifetime Supply Calculator -->
+<script>
+    function calculateSupply(age, amount) {
+        var supply = "You will need " + ((amount * 356) * age) + " sheets of seaweed to last you until you're " +
+            age + " old.";
+        console.log(supply)
+    }
+
+    calculateSupply("15", "4");
+    calculateSupply("38", "5");
+    calculateSupply("40", "2");
+</script>
+
+
+<!-- The Geometrizer -->
+<script>
+    function calCircumference(radius) {
+        var circumference = "The circumference is " + 2 * Math.PI * radius;
+
+        console.log(circumference)
+    }
+
+    calCircumference(5);
+    calCircumference(3);
+    calCircumference(12);
+</script>
+
+
+<script>
+    function calArea(radius) {
+        var area = "The area is " + Math.PI * Math.pow(radius, 2)
+
+        console.log(area)
+    }
+
+    calArea(4);
+    calArea(18);
+    calArea(7);
+
+</script>
+
+
+<!-- The Temperature Converter -->
+
+<script>
+    function celsiusToFahrenheit(celsius){
+        var convert = celsius + " C is " + (celsius * (9/5)+32) + " F"
+        console.log(convert);
+    }
+
+    function fahrenheitToCelsius (fahrenheit){
+        var convert = fahrenheit + " F is " + (fahrenheit - 32) * 5/9
+        console.log(convert);
+    }
+
+    celsiusToFahrenheit(5);
+    celsiusToFahrenheit(22);
+
+    fahrenheitToCelsius (77);
+    fahrenheitToCelsius(45);
+</script>
+
+
+
+
+<!-- The Calculator -->
+
+<script>
+    function squareNumb(number){
+        var squaredNumber = "The result of squaring the number " + number + " is " + Math.pow (number,2) + ".";
+        console.log(squaredNumber);
+    }
+
+    function halfNumber(number){
+        var dividedNum = "Half of " + number + " is " + number/2
+        console.log(dividedNum);
+    }
+
+    function percentOf(number,percentage){
+        var percentage = (number * percentage)/100 + " is " + percentage + " percent"+ " of " + number 
+        console.log(percentage)
+    }
+
+    squareNumb(9);
+    squareNumb(3);
+    squareNumb(12);
+
+    halfNumber(72);
+    halfNumber(180);
+
+    percentOf(5,50);
+    percentOf(80,30);
+    percentOf(500,9);
+
+    function equation(number){
+        var halfNumber = number/2;
+        var squareNum = Math.pow (halfNumber,2);
+        var area = Math.PI* Math.pow (squareNum,2);
+        var percentage = ((squareNum*100) /area);
+
+        console.log(percentage)
+    }
+
+    equation(5);
+    equation(16);
+
+</script>
+
