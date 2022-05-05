@@ -1,0 +1,52 @@
+<!-- The even/odd reporter -->
+<script>
+    for (var i = 0; i <= 20; i++) {
+        if (i % 2 === 0) {
+            console.log(i + " is even");
+        } else {
+            console.log(i + " is odd");
+        }
+    }
+</script>
+
+
+<!-- Multiplication Tables -->
+<script>
+    for (var i = 0; i <= 10; i++) {
+        var i = i * 9
+        console.log(i);
+    }
+</script>
+
+
+<!-- The Grade Assigner -->
+<script>
+    function assignGrade(score) {
+        if (score > 91) {
+            return "A";
+        } else if (score > 90) {
+            return "B";
+        } else if (score > 80) {
+            return "C";
+        } else if (score > 70) {
+            return "D";
+        } else {
+            return "F";
+        }
+    }
+
+    for (var i = 80; i <= 100; i++) {
+        console.log("For " + i + ", you got a " + assignGrade(i));
+    }
+</script>
+
+
+<!-- Your top choices .Arrays. -->
+<script>
+    const brands = ["Nike", "Chanel", "Skims", "Even and Odd"];
+
+    console.log("My favourite Brand is " + brands [0]);
+    console.log("My favourite Brand is " + brands [1]);
+    console.log("My favourite Brand is " + brands [2]);
+    console.log("My favourite Brand is " + brands [3]);
+</script>
